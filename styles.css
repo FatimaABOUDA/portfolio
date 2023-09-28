@@ -1,0 +1,360 @@
+body {
+    font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.intro-text {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.intro-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.intro-text h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.intro-text .btn {
+    border: 1px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.intro-text .btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.intro-text .btn.btn-primary {
+    background: #fff;
+    color: #000;
+}
+
+.intro-text .btn.btn-primary:hover {
+    background: #000;
+    color: #fff;
+}
+
+.intro-text .btn.btn-secondary {
+    background: transparent;
+    color: #fff;
+}
+
+.intro-text .btn.btn-secondary:hover {
+    background: #fff;
+    color: #000;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.col-lg-12{
+    width: 100%;
+    padding: 0 20px;
+}
+.intro-text{
+    width: 100%;
+    padding: 0 20px;
+}
+.name{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.intro-text h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.intro-text .btn {
+    border: 1px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.star-light{
+    color: #fff;
+}
+.description{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+
+.et-hero-tabs,
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+    text-align: center;
+    padding: 0 2em;
+
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+        letter-spacing: 1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        opacity: 0.6;
+    }
+}
+
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: fixed; /* Ajout de la propriété position: fixed */
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+
+    &--top {
+        position: fixed;
+        top: 0;
+    }
+
+}
+.hero-Index {
+    height: 100%;
+    color: #010101;
+    background-image: url("images/home.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            background-attachment: fixed;
+            backdrop-filter: blur(30px);
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+    
+    
+        }
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+
+    &:hover {
+        color: white;
+        background: rgba(102, 177, 241, 0.8);
+        transition: all 0.5s ease;
+    }
+}
+
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+
+    .et-hero-tabs,
+    .et-slide {
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+    }
+
+    .et-hero-tab {
+        font-size: 1rem;
+    }
+}
+
+.box{
+    width: 10%;
+    height: 10%;
+    background: #cfcfcf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    /*chaque box et à coté de l'autre*/
+    display: inline-block;
+    margin: 10px;
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+
+    }
+
+    h3{
+        margin: 20px 0;
+        color: #777;
+    }
+
+    p{
+        color: #777;
+    }
+}
+
+.skills{
+    width: 100%;
+    height: 100%;
+    background: #cfcfcf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    /*chaque box et à coté de l'autre*/
+    display: inline-block;
+    margin: 10px;
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+
+    }
+
+    h3{
+        margin: 20px 0;
+        color: #777;
+    }
+
+    p{
+        color: #777;
+    }
+}
+
+.progress{
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    /*chaque box et à coté de l'autre*/
+    display: inline-block;
+    margin: 1px;
+
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+
+    }
+
+    h3{
+        margin: 20px 0;
+        color: #777;
+    }
+
+    p{
+        color: #ffd6d6;
+    }
+}
+.progress-bar{
+    width: 100%;
+    height: 100%;
+    background: #cfcfcf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    /*chaque box et à coté de l'autre*/
+    display: inline-block;
+    margin: 10px;
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+
+    }
+
+    h3{
+        margin: 20px 0;
+        color: #777;
+    }
+
+    p{
+        color: #777;
+    }
+}
