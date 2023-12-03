@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style-menu.css">
+    <link rel="stylesheet" href="style-project.css">
+    <link rel="stylesheet" href="style-timeline.scss">
+    <link rel="stylesheet" href="style.css">
+    <title>Projet</title>
+</head>
+<body>
+<a href="https://front.codes/" class="logo" target="_blank">
+    <img src="images/logo.png" alt="">
+</a>
+
+<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+<label for="menu-icon"></label>
+
+<nav class="nav">
+    <ul class="pt-5">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">A propos de moi</a></li>
+        <li><a href="experience.html">Expérience</a></li>
+
+        <li><a href="skills.html">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="vielle.html">Veille</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+    <h1>Projet</h1>
+
+<div class="box">
+    <h1>Activité 1</h1>
+
+    <h3>Formulaire d'Inscription avec Traitement PHP</h3>
+
+    <h4>I. Introduction</h4>
+    <ul>
+        <li>Formulaire d'inscription HTML avec des champs pour les informations personnelles.</li>
+        <li>Traitement côté serveur en PHP pour enregistrer les données dans une base de données.</li>
+    </ul>
+
+    <h4>II. Structure du Code</h4>
+
+    <h5>A. Formulaire HTML</h5>
+    <ul>
+        <li><strong>Condition</strong>: Vérification si le bouton "enregistrer" a été soumis.</li>
+        <li><strong>Actions</strong>:
+            <ul>
+                <li>Inclusion du fichier <code>bd_connexion.php</code> pour la connexion à la base de données.</li>
+                <li>Préparation d'une requête SQL d'insertion.</li>
+                <li>Liaison des valeurs du formulaire à la requête préparée.</li>
+                <li>Exécution de la requête pour enregistrer les données.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h5>B. Traitement PHP</h5>
+    <ul>
+        <li><strong>Condition</strong>: Si le bouton "enregistrer" est soumis.</li>
+        <li><strong>Actions</strong>:
+            <ul>
+                <li>Connexion à la base de données à l'aide de la fonction <code>connexionPDO()</code>.</li>
+                <li>Récupération des départements depuis la base de données pour le menu déroulant.</li>
+                <li>Affichage du formulaire avec des champs pour la tranche d'âge, les loisirs, et le projet de développement web.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>III. Points Importants</h4>
+
+    <h5>A. Sécurité</h5>
+    <ul>
+        <li>Utilisation de requêtes préparées pour éviter les injections SQL.</li>
+    </ul>
+
+    <h5>B. Base de Données</h5>
+    <ul>
+        <li>La connexion à la base de données est gérée par la fonction <code>connexionPDO()</code> dans <code>bd_connexion.php</code>.</li>
+    </ul>
+
+    <h5>C. Affichage Conditionnel</h5>
+    <ul>
+        <li>Le formulaire est affiché ou le traitement est effectué en fonction de l'action de l'utilisateur.</li>
+    </ul>
+
+    <h5>IV. Conclusion</h5>
+    <ul>
+        <li>Un formulaire complet d'inscription avec une logique de traitement côté serveur pour l'enregistrement des données.</li>
+    </ul>
+</div>
+<img src="images/activité1.png">
+
+<div class="box">
+    <h1>Projet PHP Orienté Objet - Gestion d'Étudiants et Promotions</h1>
+
+    <h2>Classes Principales</h2>
+
+    <h3>Classe Etudiant</h3>
+    <p>
+        Attributs privés :
+    <ul>
+        <li>Code : Identifiant unique de l'étudiant.</li>
+        <li>Nom : Nom de l'étudiant.</li>
+        <li>Prenom : Prénom de l'étudiant.</li>
+        <li>laPromo : Objet de type Promotion représentant la promotion à laquelle l'étudiant appartient.</li>
+    </ul>
+    Méthodes :
+    <ul>
+        <li>Constructeur : Initialise les attributs de l'étudiant.</li>
+        <li><code>addEtudiant()</code> : Ajoute l'étudiant à la base de données.</li>
+        <li>... : D'autres méthodes peuvent être ajoutées pour les fonctionnalités spécifiques.</li>
+    </ul>
+    </p>
+
+    <h3>Classe Promotion</h3>
+    <p>
+        Attributs privés :
+    <ul>
+        <li>Code : Identifiant unique de la promotion.</li>
+        <li>Nom : Nom de la promotion.</li>
+        <li>etudiantCollection : Tableau d'étudiants appartenant à la promotion.</li>
+    </ul>
+    Méthodes :
+    <ul>
+        <li>Constructeur : Initialise les attributs de la promotion.</li>
+        <li><code>getUnePromo($code)</code> : Récupère les détails d'une promotion avec les étudiants associés.</li>
+        <li>... : D'autres méthodes peuvent être ajoutées pour les fonctionnalités spécifiques.</li>
+    </ul>
+    </p>
+
+    <h2>Utilisation dans le Script PHP</h2>
+
+    <h3>Ajout d'un Étudiant</h3>
+    <pre>
+        <code>
+$promo = new Promotion('B2SIO', 'Classe de BTS SIO 2ème année');
+$etudiant = new Etudiant('E7', 'Petit', 'Simon', $promo);
+$etudiant->addEtudiant();
+        </code>
+    </pre>
+
+    <h3>Récupération d'Étudiants et de Promotions</h3>
+    <pre>
+        <code>
+$etudiant = new Etudiant();
+$etudiants = $etudiant->getEtudiants();
+
+$promo = new Promotion();
+$promoDetails = $promo->getUnePromo('B2SIO');
+        </code>
+    </pre>
+
+    <h2>Remarques</h2>
+    <ul>
+        <li>Assurez-vous d'avoir une structure de base de données cohérente avec les requêtes SQL utilisées dans les méthodes.</li>
+        <li>Les classes sont conçues pour encapsuler les données et les opérations liées aux étudiants et aux promotions.</li>
+        <li>Les méthodes des classes peuvent être adaptées en fonction des exigences spécifiques du projet.</li>
+    </ul>
+    <img src="images/ap3.2.0.png">
+</div>
+<h1>API REST - Gestion des Étudiants</h1>
+
+<h2>But du Projet</h2>
+<p>
+    Ce projet consiste en une API REST développée en PHP permettant la gestion des étudiants. Elle offre des fonctionnalités CRUD (Create, Read, Update, Delete) pour interagir avec une base de données d'étudiants.
+</p>
+
+<h2>Endpoints Disponibles</h2>
+<ul>
+    <li><code>POST /etudiant.php</code> : Ajouter un nouvel étudiant.</li>
+    <li><code>GET /etudiant.php</code> : Récupérer tous les étudiants.</li>
+    <li><code>GET /etudiant.php?id=X</code> : Récupérer un étudiant spécifique (remplacez X par l'ID de l'étudiant).</li>
+    <li><code>DELETE /etudiant.php?id=X</code> : Supprimer un étudiant spécifique (remplacez X par l'ID de l'étudiant).</li>
+    <li><code>PUT /etudiant.php?id=X</code> : Mettre à jour un étudiant spécifique (remplacez X par l'ID de l'étudiant).</li>
+</ul>
+
+<h2>Utilisation</h2>
+<p>
+    Pour utiliser cette API, vous pouvez envoyer des requêtes HTTP à ses différents endpoints en utilisant des outils comme Postman, cURL, ou même depuis votre propre application.
+</p>
+
+<h3>Exemple d'utilisation avec Postman</h3>
+<ol>
+    <li>Ajouter un étudiant : <code>POST /etudiant.php</code> avec les données appropriées dans le corps de la requête.</li>
+    <li>Récupérer tous les étudiants : <code>GET /etudiant.php</code>.</li>
+    <li>Récupérer un étudiant spécifique : <code>GET /etudiant.php?id=X</code>.</li>
+    <li>Supprimer un étudiant : <code>DELETE /etudiant.php?id=X</code>.</li>
+    <li>Mettre à jour un étudiant : <code>PUT /etudiant.php?id=X</code> avec les nouvelles données dans le corps de la requête.</li>
+</ol>
+
+<h2>Remarques</h2>
+<ul>
+    <li>Ce projet suppose l'utilisation d'une base de données configurée selon les besoins de l'API.</li>
+    <li>Assurez-vous d'avoir les autorisations nécessaires pour effectuer des opérations CRUD.</li>
+    <li>Les réponses de l'API sont au format JSON.</li>
+</ul>
+<img src="images/postman.png">
+
+
+</div>
+
+
+
+
+</body>
+</html>

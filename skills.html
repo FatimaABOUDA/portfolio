@@ -1,102 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style-menu.css">
-    <link rel="stylesheet" href="style-timeline.css">
+    <link rel="stylesheet" href="style-timeline.scss">
     <link rel="stylesheet" href="style-project.css">
+    <link rel="stylesheet" href="style-timeline.scss">
     <title>Portfolio</title>
 </head>
-
 <body>
+<header>
+    <a href="https://front.codes/" class="logo" target="_blank">
+        <img src="images/logo.png" alt="">
+    </a>
 
-    <div class="container">
-        <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Fatima</a>
-                <div class="social-media order-lg-last">
-                    <p class="mb-0 d-flex">
-                        <a href="#" class="d-flex align-items-center justify-content-center"><span
-                                class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-                        <a href="#" class="d-flex align-items-center justify-content-center"><span
-                                class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-                        <a href="#" class="d-flex align-items-center justify-content-center"><span
-                                class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+    <label for="menu-icon"></label>
 
-                    </p>
+    <nav class="nav">
+        <ul class="pt-5">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">A propos de moi</a></li>
+            <li><a href="experience.html">Expérience</a></li>
+
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="vielle.html">Veille</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- aligner le texte et l'image pour qu'il soient cote à cote -->
+
+<section >
+    <h1>Compétences</h1>
+    <p>Voici quelques-unes de mes compétences en développement web et logiciel :</p>
+    <div class="skills-container">
+        <div class="skills-column">
+            <h2>Langages</h2>
+            <ul id="language-skills">
+                <li>
+                    HTML
+                    <div class="bar-container">
+                            <span class="bar" data-bar='{ "color": "#19f" }' style="width: 90%;">
+                                <span class="pct">90%</span>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    CSS
+                    <div class="bar-container">
+                            <span class="bar" data-bar='{ "color": "#27ae60", "delay": 600 }' style="width: 90%;">
+                                <span class="pct">90%</span>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    PHP
+                    <div class="bar-container">
+                            <span class="bar" data-bar='{ "color": "#e74c3c", "delay": 1200 }' style="width: 70%;">
+                                <span class="pct">70%</span>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    SQL
+                    <div class="bar-container">
+                            <span class="bar" data-bar='{ "color": "#e74c3c", "delay": 1200 }' style="width: 60%;">
+                                <span class="pct">60%</span>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    Java
+                    <div class="bar-container">
+                            <span class="bar" data-bar='{ "color": "#e74c3c", "delay": 1200 }' style="width: 50%;">
+                                <span class="pct">50%</span>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    C#
+                    <div class="bar-container">
+                            <span class="bar" data-bar='{ "color": "#e74c3c", "delay": 1200 }' style="width: 40%;">
+                                <span class="pct">40%</span>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    Python
+                    <div class="bar-container">
+                            <span class="bar" data-bar='{ "color": "#e74c3c", "delay": 1200 }' style="width: 30%;">
+                                <span class="pct">30%</span>
+                            </span>
+                    </div>
+                </li>
+                <li>
+                    git/github
+                    <div class="bar-container">
+                            <span class="bar" data-bar='{ "color": "#e74c3c", "delay": 1200 }' style="width: 20%;">
+                                <span class="pct">20%</span>
+                            </span>
+                    </div>
+                </li>
+
+                <!-- Vous pouvez ajouter d'autres langages ici -->
+            </ul>
+            <a href="skills.html" class="btn">en savoir plus</a>
+        </div>
+        <div class="skills-column">
+            <h3>Logiciels</h3>
+            <ul id="software-skills">
+                <li>WAMP</li>
+                <li>Postman</li>
+                <li>Visual Studio</li>
+                <li>PhpMyAdmin</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>IntelliJ</li>
+                <li>Sublime Text</li>
+                <li>SceneBuilder</li>
+                <li>Packet Tracer</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projets</h2>
+    <div class="boxes">
+        <div class="box" onclick="openPopup(1)">
+            <div class="bg"></div>
+            <div class="content">
+                <div class="icon">
+                    <!-- Add your icon or image here -->
+
+                    <i>Icon</i>
                 </div>
-                <main class="et-main">
-                    <section class="et-hero-tabs">
-                        <h1>Fatima Abouda</h1>
-                        <h3>Develouppeuse Web et Applications</h3>
-                        <div class="et-hero-tabs-container">
-                            <a class="et-hero-tab" href="index.html#about">à propos de moi</a>
-                            <a class="et-hero-tab" href="index.htmlindex.htmlindex.htmlindex.htmlindex.html#expériance">Exepérience professionnels</a>
-                            <a class="et-hero-tab" href="index.htmlindex.htmlindex.htmlindex.html#skills">Compétences</a>
-                            <a class="et-hero-tab" href="index.htmlindex.htmlindex.html#projects">Projets</a>
-                            <a class="et-hero-tab" href="index.htmlindex.html#langue">Languague maîtrisées</a>
-                            <a class="et-hero-tab" href="index.html#contact">Contactez-moi</a>
+                <div class="title">Jeu du Pendu</div>
+                <div class="desc">
+                    <p>Le jeu du pendu est un jeu où un joueur doit deviner un mot en proposant des lettres une par une.</p>
+                    <!-- Add more project details here -->
 
-                            <span class="et-hero-tab-slider"></span>
-                        </div>
-                    </section>
+                </div>
+                <div class="read-more">
+                    <span>
+                        <i>&rarr;</i> <a href="#project-popup-1">Voir plus</a>
+                    </span>
+                </div>
+            </div>
+        </div>
 
+        <div class="box" onclick="openPopup(2)">
+            <div class="bg"></div>
+            <div class="content">
+                <div class="icon">
+                    <!-- Add your icon or image here -->
+                    <i>Icon</i>
+                </div>
+                <div class="title">Resto</div>
+                <div class="desc">
+                    <p>Description du projet 2</p>
+                    <!-- Add more project details here -->
+                </div>
+                <div class="read-more">
+                    <span>
+                        <i>&rarr;</i> <a href="#project-popup-2">Voir plus</a>
+                    </span>
+                </div>
+            </div>
+        </div>
 
-                    <section>
-                        <h1>les compétences que je metrise</h1>
-                        
-                        <h2>html 5 / css 3</h2>
-                        <p>
-                            <img src="images/HTML5.jpg" alt="" style="display: block; 
-                            width: 50%;
-                            height: 50%;
-                            ">
-                            La base. Les langages HTML et CSS seront les premiers langages que vous apprendrez pour devenir développeur web. Le rôle
-                            du développeur frond-end est de développer la partie interactive et visible d’un site Internet ou d’une application
-                            mobile. C’est pourquoi il doit maîtriser le HTML et le CSS sur le bout des doigts.
-                            
-                            Le HTML, pour HyperText Markup Language est le langage de base pour concevoir la structure d’un site Internet. Il est
-                            naturellement utilisé en front-end. C’est avec lui que toute les pages consultables sur le web sont construites :
-                            
-                            Mise en forme le texte d’une page
-                            Inclusion d’images
-                            Placement des éléments statiques ou dynamiques
-                            Ajout de liens hypertextes
-                            Le CSS (Cascading Style Sheets) quant à lui vient en complément du HTML. Si le HTML peut-être considéré comme l’ossature
-                            d’une page web, le CSS va être le revêtement de la page web. C’est avec le CSS qu’on procède à l’habillage d’un site
-                            Internet : couleurs, positions, transitions, polices…
-                            
-                            C’est la raison pour laquelle l’apprentissage du CSS est indispensable et ne devra pas être négligé. Son utilisation
-                            permet déjà d’incorporer de nombreuses fonctionnalités à l’intérieur d’une page :
-                            
-                            Aspect visuel du texte (polices, taille de caractères, alignement,…)
-                            Positionnement des éléments HTML
-                            Animations contextuelles (transition, au focus, au clic,…)
-                            Couleurs, dégradés, ombres,…
-                        </p>
-                        
-                        <h2>javascript</h2>
+        <div class="box" onclick="openPopup(3)">
+            <div class="bg"></div>
+            <div class="content">
+                <div class="icon">
+                    <!-- Add your icon or image here -->
+                    <i>Icon</i>
+                </div>
+                <div class="title">Authentification</div>
+                <div class="desc">
+                    <p>Description du projet 3</p>
+                    <!-- Add more project details here -->
+                </div>
+                <div class="read-more">
+                    <span>
+                        <i>&rarr;</i> <a href="#project-popup-3">Voir plus</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Add more boxes here -->
+    </div>
 
-                        <h2>php</h2>
-                        <h2>mysql</h2>
-                        <h2>java</h2>
-                        <h2>python</h2>
-                        <h2>git</h2>
-                        <h2>linux</h2>
-                        <h2>wordpress</h2>
-                        <h2>prestashop</h2>
-                        <h2>photoshop</h2>
-                        <h2>illustrator</h2>
-                        <h2>indesign</h2>
-                        <h2>after effect</h2>
-                        <h2>premiere pro</h2>
-                        <h2>lightroom</h2>
-                        <h2>xd</h2>
-                        <h2>figma</h2>
-                        <h2>...</h2>
+    <!-- Popups -->
+    <div id="project-popup-1" class="project-popup">
+        <span class="close-popup" onclick="closePopup(1)">&times;</span>
+        <!-- Content for project 1 popup -->
+        <!-- ... -->
+    </div>
 
-                    </section>
+    <div id="project-popup-2" class="project-popup">
+        <!-- Content for project 2 popup -->
+        <!-- ... -->
+    </div>
+
+    <div id="project-popup-3" class="project-popup">
+        <!-- Content for project 3 popup -->
+        <!-- ... -->
+    </div>
+    <!-- Add more popups here -->
+</section>
