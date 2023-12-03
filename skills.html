@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style-menu.css">
-    <link rel="stylesheet" href="style-timeline.scss">
-    <link rel="stylesheet" href="style-project.css">
-    <link rel="stylesheet" href="style-timeline.scss">
+    <link rel="stylesheet" href="style-skills.css">
     <title>Portfolio</title>
 </head>
 <body>
 <header>
-    <a href="https://front.codes/" class="logo" target="_blank">
+    <a  class="logo" target="_blank">
         <img src="images/logo.png" alt="">
     </a>
 
@@ -34,10 +32,10 @@
 
 </header>
 
-<!-- aligner le texte et l'image pour qu'il soient cote à cote -->
-
-<section >
+<section class="about-section">
     <h1>Compétences</h1>
+</section>
+<section class="skills-section">
     <p>Voici quelques-unes de mes compétences en développement web et logiciel :</p>
     <div class="skills-container">
         <div class="skills-column">
@@ -110,7 +108,6 @@
 
                 <!-- Vous pouvez ajouter d'autres langages ici -->
             </ul>
-            <a href="skills.html" class="btn">en savoir plus</a>
         </div>
         <div class="skills-column">
             <h3>Logiciels</h3>
@@ -130,88 +127,9 @@
     </div>
 </section>
 
-<section id="projects">
-    <h2>Projets</h2>
-    <div class="boxes">
-        <div class="box" onclick="openPopup(1)">
-            <div class="bg"></div>
-            <div class="content">
-                <div class="icon">
-                    <!-- Add your icon or image here -->
-
-                    <i>Icon</i>
-                </div>
-                <div class="title">Jeu du Pendu</div>
-                <div class="desc">
-                    <p>Le jeu du pendu est un jeu où un joueur doit deviner un mot en proposant des lettres une par une.</p>
-                    <!-- Add more project details here -->
-
-                </div>
-                <div class="read-more">
-                    <span>
-                        <i>&rarr;</i> <a href="#project-popup-1">Voir plus</a>
-                    </span>
-                </div>
-            </div>
-        </div>
-
-        <div class="box" onclick="openPopup(2)">
-            <div class="bg"></div>
-            <div class="content">
-                <div class="icon">
-                    <!-- Add your icon or image here -->
-                    <i>Icon</i>
-                </div>
-                <div class="title">Resto</div>
-                <div class="desc">
-                    <p>Description du projet 2</p>
-                    <!-- Add more project details here -->
-                </div>
-                <div class="read-more">
-                    <span>
-                        <i>&rarr;</i> <a href="#project-popup-2">Voir plus</a>
-                    </span>
-                </div>
-            </div>
-        </div>
-
-        <div class="box" onclick="openPopup(3)">
-            <div class="bg"></div>
-            <div class="content">
-                <div class="icon">
-                    <!-- Add your icon or image here -->
-                    <i>Icon</i>
-                </div>
-                <div class="title">Authentification</div>
-                <div class="desc">
-                    <p>Description du projet 3</p>
-                    <!-- Add more project details here -->
-                </div>
-                <div class="read-more">
-                    <span>
-                        <i>&rarr;</i> <a href="#project-popup-3">Voir plus</a>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <!-- Add more boxes here -->
-    </div>
-
-    <!-- Popups -->
-    <div id="project-popup-1" class="project-popup">
-        <span class="close-popup" onclick="closePopup(1)">&times;</span>
-        <!-- Content for project 1 popup -->
-        <!-- ... -->
-    </div>
-
-    <div id="project-popup-2" class="project-popup">
-        <!-- Content for project 2 popup -->
-        <!-- ... -->
-    </div>
-
-    <div id="project-popup-3" class="project-popup">
-        <!-- Content for project 3 popup -->
-        <!-- ... -->
-    </div>
-    <!-- Add more popups here -->
 </section>
+
+</section>
+
+</body>
+</html>

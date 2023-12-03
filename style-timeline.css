@@ -1,0 +1,65 @@
+.timeline-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    background: linear-gradient(0.25turn, #d18ed6, #ebf8e1, #9c3cf6);
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline__item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline__item--year {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.timeline__title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.timeline__blurb {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styling the timeline line */
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #333;
+    margin-left: -1px;
+}
+
+/* Styling the timeline circles */
+.timeline__item:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+/* Clearfix for better alignment */
+.timeline:after {
+    content: "";
+    display: table;
+    clear: both;
+}

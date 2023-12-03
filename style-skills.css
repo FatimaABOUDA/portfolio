@@ -1,0 +1,73 @@
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    background: linear-gradient(0.25turn, #d18ed6, #ebf8e1, #9c3cf6);
+}
+
+.skills-column {
+    width: 45%; /* Adjust the width as needed */
+    margin-bottom: 30px;
+}
+
+h2, h3 {
+    color: #343a40; /* Dark gray color for headings */
+}
+
+#language-skills, #software-skills {
+    list-style: none;
+    padding: 0;
+}
+
+#language-skills li, #software-skills li {
+    margin: 10px 0;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: rgba(214, 216, 219, 0.77); /* Light gray background for the bars */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar {
+    display: block;
+    height: 20px;
+    text-align: right;
+    padding: 5px;
+}
+
+.bar span {
+    display: inline-block;
+    height: 100%;
+}
+
+/* Customize the bar colors as needed */
+[data-bar] {
+    background-color: #89398d;
+}
+
+[data-bar="CSS"] {
+    background-color: #27ae60;
+}
+
+[data-bar="PHP"] {
+    background-color: #e74c3c;
+}
+
+/* Add more data-bar styling for other languages */
+
+.pct {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Style for software skills */
+#software-skills {
+    padding-left: 20px; /* Adjust the padding as needed */
+    color: #6c757d; /* Gray color for software skills */
+
+}

@@ -18,7 +18,7 @@ h1
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0.5rem;
-    color: #d18ed6;
+    color: #9800ff;
 
 }
 h2
@@ -28,7 +28,7 @@ h2
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0.5rem;
-    color: #d18ed6;
+    color: #404040;
 
 }
 h3
@@ -38,7 +38,7 @@ h3
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0.5rem;
-    color: #d18ed6;
+    color: #000000;
 
 }
 
@@ -68,16 +68,25 @@ h4
     line-height: 1.2;
 }
 
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px 20px;
+    text-align: center;
+    background-color: #d18ed6;
+    color: white;
+    border-radius: 20px;
+    margin: 1em;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
 h1, h2, h3, h4, .about-section, .tool, .tool img {
     text-align: left; /* Rétablir l'alignement à gauche pour ces éléments spécifiques */
     margin: auto; /* Ajout pour centrer ces éléments */
-}
-
-
-.left, .right {
-    flex: 1;
-    max-width: 600px; /* Adjust the max-width as needed */
-    margin: 5% 5% 5% 5%;
 }
 
 .about-section img {
@@ -91,16 +100,177 @@ h1, h2, h3, h4, .about-section, .tool, .tool img {
     flex-wrap: wrap;
     justify-content: space-around; /* Adjust as needed */
     align-items: center;
-    margin: 5%;
+    margin: 2%;
     text-align: center;
+    width: 50%; /* Ajustez la largeur selon vos besoins */
+
 }
 
 .tool {
-    flex: 0 1 calc(30% - 20px); /* Adjust the percentage and margin as needed */
-    margin: 0 10px;
-    padding: 20px;
-    border-radius: 10px;
+   padding: 20px;
+    border-radius: 4px;
     background-color: #d18ed6;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    box-sizing: border-box;
+    margin: 5%;
+    text-align: center;
+
+
+}
+
+.tool img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    border-radius: 10px;
+    margin-top: 5px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.section-about-5\/5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 1000px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    background: linear-gradient(0.25turn, #d18ed6, #ebf8e1, #9c3cf6);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.left{
+    flex: 1;
+    padding: 20px;
+}
+.left img {
+    width: 100%;
+    max-width: 300px; /* Ajustez la largeur maximale selon vos préférences */
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin: 5% 5% 5% 5%;
+    border: #000000 2px solid;
+    }
+
+.right {
+    flex: 1;
+    padding: 20px; /* Ajoutez une marge pour l'espace autour du texte */
+    text-align: left; /* Alignez le texte à gauche */
+    margin: 5% 5% 5% 5%;
+
+}
+
+.right p {
+    color: #000000; /* Couleur du texte sur l'image */
+
+}
+
+/* Education Section Styling */
+#education {
+    background: linear-gradient(0.25turn, #d18ed6, #ebf8e1, #9c3cf6);
+    padding: 50px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+#timeline {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+
+}
+
+#timeline li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.date {
+    width: 100px;
+    font-weight: bold;
+    color: #3d1f3f; /* Blue color for the date */
+}
+
+.event {
+    flex: 1;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.36); /* White background for the event */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event h2 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #caabcc; /* Blue color for the event */
+}
+
+.event p {
+    margin-bottom: 0;
+    color: #e5e5e5; /* Blue color for the event */
+}
+
+a {
+    color: #d18ed6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    box-shadow: #d18ed6 0 -1px 0 inset;
+    border: #d18ed6 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #000000;
+    margin-left: 10px;
+
+}
+
+img{
+    //je veux que les images soient centrées et que sa ne depasse pas de la page
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 10px;
+    border: #000000 2px solid;
+
+
+}
+.box img
+{
+    //je veux que les images soient centrées et que sa ne depasse pas de la page
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 10px;
+    border: #000000 2px solid;
+
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background: linear-gradient(0.25turn, #d18ed6, #ebf8e1, #9c3cf6);
     color: white;
     font-size: 1.5rem;
     font-weight: 300;
@@ -108,10 +278,7 @@ h1, h2, h3, h4, .about-section, .tool, .tool img {
     box-sizing: border-box;
 }
 
-.tool img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 10px; /* Adjust as needed */
-}
+.tool-container {
+       display: flex;
 
+}

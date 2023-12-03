@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style-menu.css">
     <link rel="stylesheet" href="style-project.css">
-    <link rel="stylesheet" href="style-timeline.scss">
+    <link rel="stylesheet" href="style-timeline.css">
     <link rel="stylesheet" href="style.css">
+
     <title>Projet</title>
 </head>
 <body>
-<a href="https://front.codes/" class="logo" target="_blank">
+<a href="" class="logo" target="_blank">
     <img src="images/logo.png" alt="">
 </a>
 
@@ -28,8 +29,25 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
+<section class="about-section">
     <h1>Projet</h1>
+</section>
 
+<section class="box">
+    <h2>SOMMAIRE</h2>
+    <ul>
+        <li><a href="#1">Activité 1</a></li>
+        <li><a href="#2">Projet PHP Orienté Objet - Gestion d'Étudiants et Promotions</a></li>
+        <li><a href="#3">API REST - Gestion des Étudiants</a></li>
+        <li><a href="#4">Projet de Gestion d'Utilisateurs</a></li>
+        <li><a href="#5">Projet PHOTOS</a></li>
+        <li><a href="#6">Projet de Gestion d'étudiant</a></li>
+        <li><a href="#7">ORM</a></li>
+
+    </ul>
+</section >
+
+</section id ="1">
 <div class="box">
     <h1>Activité 1</h1>
 
@@ -89,10 +107,12 @@
     <ul>
         <li>Un formulaire complet d'inscription avec une logique de traitement côté serveur pour l'enregistrement des données.</li>
     </ul>
+    <img src="images/activité1.png">
 </div>
-<img src="images/activité1.png">
+
 
 <div class="box">
+    <section id="2">
     <h1>Projet PHP Orienté Objet - Gestion d'Étudiants et Promotions</h1>
 
     <h2>Classes Principales</h2>
@@ -160,6 +180,10 @@ $promoDetails = $promo->getUnePromo('B2SIO');
     </ul>
     <img src="images/ap3.2.0.png">
 </div>
+</section>
+
+<div class="box">
+    <section id="3">
 <h1>API REST - Gestion des Étudiants</h1>
 
 <h2>But du Projet</h2>
@@ -200,9 +224,259 @@ $promoDetails = $promo->getUnePromo('B2SIO');
 
 
 </div>
+</section>
 
+<div class="box">
+    <section id="4">
+    <h1>Projet de Gestion d'Utilisateurs</h1>
+<section>
+    <ul>
+        <li>Affiche le tableau de bord de l'utilisateur connecté.</li>
+        <li>Vérifie la connexion via les sessions PHP.</li>
+        <li>Affiche le nom de l'utilisateur et propose un lien de déconnexion.</li>
+    </ul>
+</section>
 
+<section>
+    <h2>Inscription</h2>
+    <ul>
+        <li>Permet aux utilisateurs de s'inscrire.</li>
+        <li>Le formulaire capture le nom d'utilisateur, l'e-mail et le mot de passe.</li>
+        <li>Mot de passe hashé avant le stockage dans la base de données.</li>
+        <li>Message de succès affiché après l'inscription.</li>
+    </ul>
+</section>
 
+<section>
+    <h2>Connexion</h2>
+    <ul>
+        <li>Gère le processus d'authentification des utilisateurs.</li>
+        <li>L'utilisateur entre son nom d'utilisateur et son mot de passe.</li>
+        <li>Le mot de passe est comparé avec le hash stocké.</li>
+        <li>Redirection vers le tableau de bord en cas de succès.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Déconnexion</h2>
+    <ul>
+        <li>Gère la déconnexion des utilisateurs.</li>
+        <li>La session est détruite, l'utilisateur est redirigé vers la page de connexion.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Remarques Générales</h2>
+    <ul>
+        <li>Utilisation de fichiers de configuration pour la base de données.</li>
+        <li>Styles CSS inclus via le fichier externe <code>style.css</code>.</li>
+        <li>Utilisation de sessions PHP pour le suivi de l'état de l'utilisateur.</li>
+        <li>Stockage sécurisé des mots de passe avec Bcrypt.</li>
+    </ul>
+    <img src="images/authentification.png">
+</section>
+</div>
+</section>
+<section id ="5">
+    <div class="box">
+    <h1>Projet PHOTOS</h1>
+    <h2>But du Projet</h2>
+    <p>
+        Ce projet consiste en une application web de gestion de photos développée en PHP. Elle offre des fonctionnalités CRUD (Create, Read, Update, Delete) pour interagir avec une base de données de photos.
+    </p>
+
+        1. Page d'accueil (index.php):
+        Contenu : Message de bienvenue et informations sur le maquillage.
+        Inclusions :
+        Feuille de style : style.css.
+        En-tête : bloc_entete.php.
+        Menu : bloc_menu.php.
+        Pied de page : bloc_pied.php.
+        Contenu supplémentaire spécifique à la page d'accueil (accueil.php).
+        2. Contenu de la Page d'Accueil (accueil.php):
+        Contient probablement un contenu spécifique ou des fonctionnalités pour la page d'accueil.
+        3. Liste des Photos (partie1.1liste_photos.php):
+        Fonctionnalité : Affiche une liste de photos en fonction du type sélectionné.
+        Fonctionnalités :
+        Menu déroulant pour choisir un type de photo.
+        Formulaire pour soumettre le type sélectionné.
+        4. Informations Détaillées sur une Photo (partie1.2info_photos.php):
+        Fonctionnalité : Affiche des informations détaillées sur une photo sélectionnée.
+        Fonctionnalités :
+        Récupère et affiche des détails depuis la base de données en fonction de la photo sélectionnée.
+        5. Liste des Articles (partie2.info_article.php):
+        Fonctionnalité : Affiche une liste d'articles.
+        Fonctionnalités :
+        Détails sur chaque article, y compris les photos associées.
+        Formulaire pour ajouter de nouvelles photos aux articles.
+        6. Informations sur les Photographes (partie3.photographe.php):
+        Fonctionnalité : Liste tous les photographes et permet des modifications.
+        Fonctionnalités :
+        Option pour modifier les informations d'un photographe.
+        Formulaire pour mettre à jour les détails du photographe.
+        Points Généraux :
+        Style : Style cohérent à travers les sections avec style.css.
+        Interaction avec la Base de Données PHP : PHP est utilisé pour se connecter à une base de données, récupérer des données et générer du contenu dynamiquement.
+        Structure Modulaire : Les sections sont divisées en différents fichiers pour la maintenabilité.
+        Points Additionnels :
+        Assurez-vous d'une gestion appropriée des erreurs, de la validation et des mesures de sécurité, en particulier lors de l'interaction avec une base de données.
+        Considérez l'organisation supplémentaire du code PHP pour la clarté et la maintenabilité.
+        Considérez l'utilisation de fonctions PHP pour éviter la duplication de code.
+        Considérez l'utilisation de classes PHP pour encapsuler les données et les opérations liées aux photos, aux articles et aux photographes.
+
+        <img src="images/BLOC2_A2_PHOTO.png">
+    </div>
+</section>
+
+<section id="6">
+    <div class="box">
+    <h1>Projet de Gestion d'étudiant</h1>
+
+    <section>
+        <h2>Liste des Étudiants</h2>
+        <p>Une application de gestion d'étudiants utilisant une API REST.</p>
+        <ul>
+            <li>Liste des étudiants</li>
+            <li>Ajouter un étudiant</li>
+            <li>Supprimer un étudiant</li>
+            <li>Modifier un étudiant</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Objectif</h2>
+        <p>
+            Le projet vise à créer une application de gestion d'étudiants en utilisant une API REST pour effectuer des
+            opérations CRUD (Create, Read, Update, Delete). L'application permet d'interagir avec un serveur distant
+            pour récupérer, ajouter, modifier ou supprimer des informations sur les étudiants.
+        </p>
+    </section>
+
+    <section>
+        <h2>Structure du Projet</h2>
+        <p>Le projet est divisé en plusieurs pages, chacune offrant une fonctionnalité spécifique :</p>
+        <ul>
+            <li><strong>Liste des Étudiants (`read.php`)</strong>: Affiche une liste de tous les étudiants existants.
+                Permet également de filtrer les étudiants par ID à l'aide d'un formulaire.</li>
+            <li><strong>Ajouter un Étudiant (`create.php`)</strong>: Permet d'ajouter un nouvel étudiant en saisissant
+                les détails dans un formulaire. Les données sont envoyées au serveur via une requête POST à l'API.</li>
+            <li><strong>Modifier un Étudiant (`update.php`)</strong>: Affiche la liste des étudiants avec un formulaire
+                de modification associé à chaque étudiant. Lorsque le formulaire est soumis, une requête PUT est envoyée à
+                l'API pour mettre à jour les informations de l'étudiant.</li>
+            <li><strong>Supprimer un Étudiant (`delete.php`)</strong>: Permet de supprimer un étudiant en spécifiant son
+                ID dans un formulaire. Une requête DELETE est envoyée à l'API pour effectuer la suppression.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Technologies Utilisées</h2>
+        <p>
+            <strong>Frontend :</strong> HTML, CSS<br>
+            <strong>Backend :</strong> PHP<br>
+            <strong>Communication avec l'API :</strong> cURL
+        </p>
+    </section>
+
+    <section>
+        <h2>Fonctionnement</h2>
+        <ol>
+            <li>
+                <strong>Lecture des Étudiants (`read.php`)</strong>:
+                <ul>
+                    <li>Récupère la liste des étudiants depuis l'API.</li>
+                    <li>Affiche les détails des étudiants.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Ajout d'un Étudiant (`create.php`)</strong>:
+                <ul>
+                    <li>Envoie une requête POST à l'API pour ajouter un nouvel étudiant.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Modification d'un Étudiant (`update.php`)</strong>:
+                <ul>
+                    <li>Affiche les détails des étudiants avec des formulaires de modification.</li>
+                    <li>Envoie une requête PUT à l'API pour mettre à jour les informations de l'étudiant.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Suppression d'un Étudiant (`delete.php`)</strong>:
+                <ul>
+                    <li>Affiche un formulaire pour spécifier l'ID de l'étudiant à supprimer.</li>
+                    <li>Envoie une requête DELETE à l'API pour supprimer l'étudiant.</li>
+                </ul>
+            </li>
+        </ol>
+        <img src="images/CONSO_API.png">
+    </section>
+    </div>
+
+</section>
+
+<section id="7">
+    <div class="box">
+    <h1>ORM</h1>
+
+    <h2>Classe : Famille</h2>
+    <ul>
+        <li><strong>Propriétés :</strong>
+            <ul>
+                <li><code>codeFamille</code></li>
+                <li><code>nomFamille</code></li>
+                <li><code>AlleeStockage</code></li>
+                <li><code>produits</code></li>
+                <li><code>laFamille</code> (statique)</li>
+            </ul>
+        </li>
+        <li><strong>Constructeur :</strong>
+            <ul>
+                <li>Initialise les propriétés de la classe et crée une liste vide pour les produits.</li>
+            </ul>
+        </li>
+        <li><strong>Méthode <code>CreateFamille</code> :</strong>
+            <ul>
+                <li>Connecte à la base de données MySQL.</li>
+                <li>Exécute une requête SQL d'insertion pour ajouter une nouvelle famille avec des paramètres spécifiés.</li>
+            </ul>
+        </li>
+        <li><strong>Méthodes <code>findOneFamille</code> et <code>findAllFamille</code> :</strong>
+            <ul>
+                <li><code>findOneFamille</code> : Recherche une famille par code dans la base de données et renvoie une instance de Famille.</li>
+                <li><code>findAllFamille</code> : Récupère toutes les familles de la base de données et renvoie une liste d'instances de Famille.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Classe : Produit</h2>
+    <ul>
+        <li><strong>Propriétés :</strong>
+            <ul>
+                <li><code>codeProduit</code></li>
+                <li><code>nomProduit</code></li>
+                <li><code>laFamille</code></li>
+            </ul>
+        </li>
+        <li><strong>Constructeur :</strong>
+            <ul>
+                <li>Initialise les propriétés de la classe.</li>
+            </ul>
+        </li>
+        <li><strong>Méthode <code>findAllProduit</code> :</strong>
+            <ul>
+                <li>Recherche tous les produits de la base de données et renvoie une liste d'instances de Produit.</li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <h2>Classe : Form1 (Formulaire principal)</h2>
+    <ul>
+
+    </ul>
+<img src="images/ORM.png">
+    </div>
+</section>
 
 </body>
 </html>
