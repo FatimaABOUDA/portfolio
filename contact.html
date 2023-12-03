@@ -1,86 +1,84 @@
-
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-<link rel="stylesheet" href="styles-contact.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style-menu.css">
+    <link rel="stylesheet" href="styles-contact.css">
+    <title>Portfolio</title>
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<section id="contact">
+<header>
+    <a class="logo" target="_blank">
+        <img src="images/logo.png" alt="">
+    </a>
 
-    <h1 class="section-header">Contact</h1>
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+    <label for="menu-icon"></label>
 
-    <div class="contact-wrapper">
+    <nav class="nav">
+        <ul class="pt-5">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">A propos de moi</a></li>
+            <li><a href="experience.html">Expérience</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="vielle.html">Veille</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <!-- Left contact page -->
-
-        <form id="contact-form" class="form-horizontal" role="form">
-
-            <div class="form-group">
-                <div class="col-sm-12">
-                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-sm-12">
-                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-                </div>
-            </div>
-
-            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-
-            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                <div class="alt-send-button">
-                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                </div>
-
-            </button>
-
-        </form>
-
-        <!-- Left contact page -->
-
-        <div class="direct-contact-container">
-
-            <ul class="contact-list">
-                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
-
-                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
-
-                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
-
-            </ul>
-
-            <hr>
-            <ul class="social-media-list">
-                <li><a href="#" target="_blank" class="contact-icon">
-                    <i class="fa fa-github" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                    <i class="fa fa-codepen" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                    <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                    <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-            </ul>
-            <hr>
-
-            <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-
-        </div>
-
-    </div>
-
+<section>
+    <h1>CONTACT</h1>
 </section>
-<!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script><script  src="./script.js"></script>
 
+<section class="contact-section">
+    <div class="contact-container">
+        <div class="contact-column contact-info">
+            <h2>Me contacter</h2>
+            <ul>
+                <li>
+                    <strong>Email :</strong>
+                    <a href="mailto:fatima.abouda2003@gmail.com">fatima.abouda2003@gmail.com</a>
+                </li>
+                <li>
+                    <strong>Téléphone :</strong>
+                    <a href="tel:+33600000000">+336 00 00 00 00</a>
+                </li>
+                <li class="social-icons">
+                    <a  target="_blank">
+                        <img src="images/link.png" href="https://www.linkedin.com/in/fatima-abouda-b7797a28b/" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/FatimaABOUDA" target="_blank">
+                        <img src="images/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://codepen.io/fatima-ezzahrae-abouda" target="_blank">
+                        <img src="images/codepen.jpg" alt="CodePen">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contact-column contact-form">
+            <h2>Envoyez-moi un message</h2>
+            <form action="contact.php" method="post">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+
+                <input type="submit" value="Envoyer">
+            </form>0
+        </div>
+    </div>
+</section>
 </body>
+
 </html>
