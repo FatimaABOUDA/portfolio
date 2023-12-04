@@ -8,8 +8,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     opacity: 1;
-    background-color: #000000;
-
+    background-image: url("images/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.37);
 }
 
 .section-center {
@@ -25,7 +29,7 @@ body {
 
     text-align: center;
     transform: translateY(-50%);
-    background: linear-gradient(0.25turn, #d18ed6, #ebf8e1, #9c3cf6);
+    background: rgba(255, 255, 255, 0.47);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -44,7 +48,6 @@ body {
     background-color: #000000;
     opacity: 0.9;
     border-radius: 25px;
-    border: 2px solid #d18ed6;
     padding: 20px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -303,7 +306,6 @@ h1 {
     display: block;
     z-index: 11;
     transition: all 250ms linear;
-    opacity: 0.5;
 
 }
 

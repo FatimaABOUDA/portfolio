@@ -2,7 +2,7 @@
     max-width: 800px;
     margin: 50px auto;
     padding: 0 20px;
-    background: linear-gradient(0.25turn, #d18ed6, #ebf8e1, #9c3cf6);
+    background: rgba(255, 255, 255, 0.61);
 }
 
 .timeline {
@@ -27,7 +27,7 @@
 }
 
 .timeline__blurb {
-    color: #007BFF;
+    color: rgba(209, 142, 214, 0.5);
     text-decoration: none;
     font-weight: bold;
 }
@@ -40,7 +40,7 @@
     bottom: 0;
     left: 50%;
     width: 2px;
-    background-color: #333;
+    background-color: #000000;
     margin-left: -1px;
 }
 
@@ -50,7 +50,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: #333;
+    background-color: #000000;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
