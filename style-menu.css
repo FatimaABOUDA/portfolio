@@ -343,7 +343,7 @@ h1 {
         -webkit-text-fill-color: transparent;
         text-fill-color: transparent;
         color: transparent;
-        box-shadow: #9c89a1 0px 0px 0px 2px;
+        box-shadow: rgba(28, 28, 28, 0.66) 0px 0px 0px 2px;
         transition: all 250ms linear;
 
     }
