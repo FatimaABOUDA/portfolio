@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API REST - Gestion des Étudiants</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .code {
+      font-weight: bold;
+      color: #007BFF;
+    }
+    .method {
+      font-style: italic;
+      color: #28A745;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #6C757D;
+    }
+    img {
+      width: 70%;
+      margin-top: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>API REST - Gestion des Étudiants</h1>
+
+  <section>
+    <h2>But du Projet</h2>
+    <p>
+      Ce projet consiste en une API REST développée en PHP permettant la gestion des étudiants. Elle offre des fonctionnalités CRUD (Create, Read, Update, Delete) pour interagir avec une base de données d'étudiants.
+    </p>
+  </section>
+
+  <section>
+    <h2>Endpoints Disponibles</h2>
+    <ul>
+      <li><code>POST /etudiant.php</code> : Ajouter un nouvel étudiant.</li>
+      <li><code>GET /etudiant.php</code> : Récupérer tous les étudiants.</li>
+      <li><code>GET /etudiant.php?id=X</code> : Récupérer un étudiant spécifique (remplacez X par l'ID de l'étudiant).</li>
+      <li><code>DELETE /etudiant.php?id=X</code> : Supprimer un étudiant spécifique (remplacez X par l'ID de l'étudiant).</li>
+      <li><code>PUT /etudiant.php?id=X</code> : Mettre à jour un étudiant spécifique (remplacez X par l'ID de l'étudiant).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Utilisation</h2>
+    <p>
+      Pour utiliser cette API, vous pouvez envoyer des requêtes HTTP à ses différents endpoints en utilisant des outils comme Postman, cURL, ou même depuis votre propre application.
+    </p>
+
+    <h3>Exemple d'utilisation avec Postman</h3>
+    <ol>
+      <li>Ajouter un étudiant : <code>POST /etudiant.php</code> avec les données appropriées dans le corps de la requête.</li>
+      <li>Récupérer tous les étudiants : <code>GET /etudiant.php</code>.</li>
+      <li>Récupérer un étudiant spécifique : <code>GET /etudiant.php?id=X</code>.</li>
+      <li>Supprimer un étudiant : <code>DELETE /etudiant.php?id=X</code>.</li>
+      <li>Mettre à jour un étudiant : <code>PUT /etudiant.php?id=X</code> avec les nouvelles données dans le corps de la requête.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Remarques</h2>
+    <ul>
+      <li>Ce projet suppose l'utilisation d'une base de données configurée selon les besoins de l'API.</li>
+      <li>Assurez-vous d'avoir les autorisations nécessaires pour effectuer des opérations CRUD.</li>
+      <li>Les réponses de l'API sont au format JSON.</li>
+    </ul>
+  </section>
+
+  <!-- Ajout d'une section pour l'affichage de la liste des étudiants -->
+  <section>
+    <h2>Affichage de la Liste des Étudiants</h2>
+    <img src="images/postman.png" alt="Exemple d'affichage de la liste des étudiants avec Postman">
+  </section>
+</div>
+</body>
+</html>

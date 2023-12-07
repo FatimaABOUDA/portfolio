@@ -1,25 +1,120 @@
-.box{
+/* Ajoutez ceci à votre fichier style.css ou entre les balises <style>...</style> dans l'en-tête de votre document HTML */
+.hero-project {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #000000;
+    background-image: url("images/project.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 10px 50px 20px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.45);
-    color: #000000;
-    border-radius: 20px;
-    margin: 1em;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.2;
 }
-.box:hover {
-    background-color: rgba(255, 255, 255, 0.75);
-    color: #000000;
-    border-radius: 20px;
-    margin: 1em;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.2;
+.project-box {
+    border: 1px solid #ddd; /* Bordure de la boîte */
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden;
+    margin: 20px 0;
+
+
 }
 
+.project-box img {
+    width: 100%; /* La largeur de l'image prend toute la largeur de la boîte */
+    height: auto; /* Ajuste la hauteur de l'image en conséquence */
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333; /* Couleur du titre */
+}
+
+.project-description {
+    font-size: 1.2em;
+    color: #555; /* Couleur du texte de la description */
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #3498db; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #2980b9; /* Couleur de fond du bouton au survol */
+}
+
+/* Ajoutez des ajustements supplémentaires selon vos préférences */
+
+
+.projet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.projet h1{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #000000;
+    background-image: url("images/project.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projet .project-box{
+    border: 1px solid #ddd; /* Bordure de la boîte */
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden;
+    margin: 20px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.projet .project-box img{
+    width: 100%; /* La largeur de l'image prend toute la largeur de la boîte */
+    height: auto; /* Ajuste la hauteur de l'image en conséquence */
+}
+
+.projet .project-info{
+    padding: 20px;
+}
+
+.projet .project-title{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333; /* Couleur du titre */
+}
+
+.projet .project-description{
+    font-size: 1.2em;
+    color: #555; /* Couleur du texte de la description */
+}

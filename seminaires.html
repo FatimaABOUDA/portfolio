@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet Gestion de Séminaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+
+        }
+        .box {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .class-section {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .code {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .method {
+            font-style: italic;
+            color: #28A745;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #6C757D;
+        }
+        img {
+            width: 70%;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+
+<section id="1" class="class-section">
+    <div class="box">
+        <h2>Fonctions pour charger et sauvegarder des données JSON :</h2>
+        <div class="code">chargeJSONseminaire():</div>
+        <div class="note">Charge les données du fichier JSON 'data/seminaire.json' et les renvoie sous forme de tableau associatif.</div>
+
+        <div class="code">chargeJSONprofessions():</div>
+        <div class="note">Charge les données du fichier JSON 'data/professions.json' et les renvoie.</div>
+
+        <div class="code">sauveJSONseminaire($doc):</div>
+        <div class="note">Sauvegarde les données passées en argument dans le fichier JSON 'data/seminaire.json'.</div>
+
+        <div class="code">chargeJSONadmin():</div>
+        <div class="note">Charge les données du fichier JSON 'data/admin.json' et les renvoie.</div>
+
+        <h2>Fonctions pour obtenir des informations sur le séminaire :</h2>
+        <div class="code">donnerIntituleSeminaire():</div>
+        <div class="note">Retourne l'intitulé du séminaire en extrayant cette information du fichier JSON.</div>
+
+        <div class="code">donnerLesHeuresCreneaux():</div>
+        <div class="note">Retourne la liste de toutes les heures de début des créneaux du séminaire.</div>
+
+        <div class="code">donnerLesConferences($heure):</div>
+        <div class="note">Retourne toutes les conférences commençant à l'heure spécifiée.</div>
+
+        <h2>Fonctions pour gérer les participants et leurs inscriptions :</h2>
+        <div class="code">sauverDonneesInscription($nom, $prenom, $mail, $ville, $profession):</div>
+        <div class="note">Sauvegarde les informations d'un visiteur (nom, prénom, etc.) dans le fichier JSON 'data/seminaire.json'.</div>
+
+        <div class="code">donnerLesProfessions():</div>
+        <div class="note">Retourne toutes les professions possibles à partir du fichier JSON 'data/professions.json'.</div>
+
+        <div class="code">estInscrit():</div>
+        <div class="note">Vérifie si un visiteur est déjà inscrit en vérifiant l'existence de variables de session.</div>
+
+        <div class="code">enregistre($lesChoix):</div>
+        <div class="note">Enregistre un participant et ses choix de conférences dans le fichier JSON 'data/seminaire.json'.</div>
+
+        <h2>Fonctions pour obtenir des informations sur les conférences :</h2>
+        <div class="code">donnerToutesLesConferences():</div>
+        <div class="note">Retourne toutes les conférences sous forme d'un tableau avec des informations détaillées.</div>
+
+        <div class="code">donnerParticipants($numConference):</div>
+        <div class="note">Retourne tous les participants inscrits à une conférence spécifiée par son numéro.</div>
+
+
+        <h2>Fonctions de connexion et vérification d'administrateur :</h2>
+        <div class="code">verifier($login, $mdp):</div>
+        <div class="note">Vérifie le login et le mot de passe pour autoriser l'accès en tant qu'administrateur.</div>
+
+        <div class="code">estAdmin():</div>
+        <div class="note">Vérifie si le visiteur est un administrateur connecté et autorisé à visualiser les inscriptions.</div>
+
+        <h2>Fonctions pour vérifier les données d'inscription :</h2>
+        <div class="code">verifierDonneesInscription($nom, $prenom, $mail, $ville):</div>
+        <div class="note">Vérifie les données saisies lors de l'inscription.</div>
+
+        <h2>Fonctions liées aux erreurs :</h2>
+        <div class="code">ajouterErreur($msg):</div>
+        <div class="note">Ajoute un message d'erreur à un tableau.</div>
+
+        <div class="code">donnerNbErreurs():</div>
+        <div class="note">Retourne le nombre de messages d'erreurs.</div>
+
+        <div class="code">afficherErreurs():</div>
+        <div class="note">Affiche tous les messages d'erreur.</div>
+
+        <h2>Fonction de contrôleur principal :</h2>
+        <div class="code">controleurPrincipal($action):</div>
+        <div class="note">Détermine le fichier à inclure en fonction de l'action demandée.</div>
+
+
+        <h2>Autres parties du code :</h2>
+        <div class="note">Session Start: Démarre la session au début du fichier.</div>
+        <div class="note">Inclusion des fichiers de fonctions et vue: Inclut les fichiers de fonctions et les vues nécessaires à l'exécution du code.</div>
+        <div class="note">Traitement du formulaire d'inscription et redirection: Traite les données du formulaire d'inscription et redirige l'utilisateur en fonction de la validation.</div>
+        <div class="note">Appel du contrôleur principal avec gestion des actions.</div>
+        <div class="note">Données JSON d'exemple: Fournit des données JSON d'exemple pour les utilisateurs, les professions et le séminaire.</div>
+
+        Affichage de la page d'accueil du séminaire:
+        <img src="images/seminaire.png">
+    </div>
+</section>
+
+</body>
+</html>

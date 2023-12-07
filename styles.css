@@ -18,17 +18,18 @@ h1
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0.5rem;
-    color: #ffffff;
+    color: #000000;
 
 }
 h2
 {
+
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0.5rem;
-    color: #fff5f5;
+    color: #000000;
 
 }
 h3
@@ -38,7 +39,7 @@ h3
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0.5rem;
-    color: #ffffff;
+    color: #000000;
 
 }
 
@@ -49,23 +50,8 @@ h4
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0.5rem;
-    color: #ffffff;
+    color: #000000;
 
-}
-.about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 50px 20px;
-    text-align: center;
-    background-color: rgba(250, 250, 250, 0.47);
-    color: white;
-    border-radius: 20px;
-    margin: 1em;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.2;
 }
 
 .box {
@@ -76,7 +62,7 @@ h4
     padding: 10px 50px 20px;
     text-align: center;
     background-color: #000000;
-    color: white;
+    color: #000000;
     border-radius: 20px;
     margin: 1em;
     font-size: 1.5rem;
@@ -88,7 +74,7 @@ h1, h2, h3, h4, .about-section, .tool, .tool img {
     text-align: left; /* Rétablir l'alignement à gauche pour ces éléments spécifiques */
     margin: auto; /* Ajout pour centrer ces éléments */
     width: 90%; /* Ajustez la largeur selon vos besoins */
-    color: #ffffff;
+    color: #000000;
 }
 
 .about-section img {
@@ -97,42 +83,6 @@ h1, h2, h3, h4, .about-section, .tool, .tool img {
     border-radius: 10px;
     margin: 5% 5% 5% 5%;
 }
-.tool-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* Adjust as needed */
-    align-items: center;
-    margin: 2%;
-    text-align: center;
-    width: 50%; /* Ajustez la largeur selon vos besoins */
-
-}
-
-.tool {
-   padding: 20px;
-    border-radius: 4px;
-    background-color: rgba(209, 142, 214, 0.56);
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-    box-sizing: border-box;
-    margin: 5%;
-    text-align: center;
-    width: 50%; /* Ajustez la largeur selon vos besoins */
-
-
-}
-
-.tool img {
-    width: 100%;
-    height: auto;
-    max-height: 220px;
-    border-radius: 10px;
-    margin-top: 5px; /* Adjust as needed */
-    object-fit: cover;
-}
-
 .section-about-5\/5{
     display: flex;
     flex-direction: row;
@@ -141,9 +91,8 @@ h1, h2, h3, h4, .about-section, .tool, .tool img {
     padding: 20px;
     position: relative;
     max-width: 1000px;
-    border: 2px solid #000000;
+    border: 2px solid #646464;
     border-radius: 25px;
-    background: rgba(0, 0, 0, 0.51);
     font-family: 'Roboto', sans-serif;
 
 }
@@ -151,15 +100,17 @@ h1, h2, h3, h4, .about-section, .tool, .tool img {
 .left{
     flex: 1;
     padding: 20px;
+    text-align: left;
+    margin: 5% 5% 5% 5%;
+
 }
 .left img {
+
     width: 100%;
-    max-width: 300px; /* Ajustez la largeur maximale selon vos préférences */
     height: auto;
-    display: block;
     border-radius: 10px;
     margin: 5% 5% 5% 5%;
-    border: #000000 2px solid;
+
     }
 
 .right {
@@ -168,65 +119,79 @@ h1, h2, h3, h4, .about-section, .tool, .tool img {
     text-align: left; /* Alignez le texte à gauche */
     margin: 5% 5% 5% 5%;
 
+
 }
 
 .right p {
-    color: #fafafa; /* Couleur du texte sur l'image */
+    color: #000000; /* Couleur du texte sur l'image */
 
 }
+/* Ajoutez ceci à votre fichier style.css ou entre les balises <style>...</style> dans l'en-tête de votre document HTML */
 
-/* Education Section Styling */
 #education {
-    background: rgba(0, 0, 0, 0.56);
-    padding: 50px 0;
-    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5; /* Couleur de fond */
+    padding: 50px 0; /* Espace intérieur */
 }
 
 #wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1200px; /* Largeur maximale du contenu */
+    margin: 0 auto; /* Centrer le contenu */
 }
 
+h1 {
+    text-align: center;
+    color: #333; /* Couleur du texte */
+}
 
 #timeline {
-    list-style: none;
-    padding: 0;
-    margin: 40px 0;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#timeline li {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+li {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    color: #212529;
 }
 
 .date {
-    width: 100px;
+    font-size: 1.2em;
     font-weight: bold;
-    color: #ed00ff; /* Blue color for the date */
+    color: #646464; /* Couleur de la date */
+    min-width: 80px; /* Largeur minimale de la date */
+    text-align: right;
+    margin-right: 20px;
 }
 
 .event {
     flex: 1;
-    padding: 10px;
-    background-color: rgba(250, 250, 250, 0.39); /* White background for the event */
+    padding: 20px;
+    background-color: #fff; /* Couleur de fond de l'événement */
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
-.event h2 {
-    margin-top: 0;
-    font-weight: bold;
-    color: rgba(250, 250, 250, 0.8); /* Blue color for the event */
+h2 {
+    font-size: 1.5em;
+    color: #333; /* Couleur du titre */
+    margin-bottom: 10px;
 }
 
-.event p {
-    margin-bottom: 0;
-    color: #fafafa; /* Blue color for the event */
+p {
+    color: #000000; /* Couleur du texte */
+    margin: 0;
 }
+
+/* Ajoutez des ajustements supplémentaires selon vos préférences */
+
 
 a {
     color: #ffffff;
@@ -285,3 +250,114 @@ section {
        display: flex;
 
 }
+
+.box-item {
+    border: 1px solid #ccc; /* Ajoute une bordure */
+    padding: 10px; /* Ajoute une marge interne */
+    margin: 5px 0; /* Ajoute une marge externe en haut et en bas */
+    border-radius: 5px; /* Ajoute des coins arrondis */
+    background-color: #f0f0f0; /* Ajoute une couleur de fond */
+    display: inline-block; /* Permet aux boîtes de s'afficher en ligne */
+    width: 100%; /* Définit la largeur des boîtes */
+    box-sizing: border-box; /* Définit la boîte de la boîte */
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    box-sizing: border-box;
+    margin: 5%;
+    text-align: center;
+    width: 50%; /* Ajustez la largeur selon vos besoins */
+
+}
+
+/* Ajoutez ceci à votre fichier style.css ou entre les balises <style>...</style> dans l'en-tête de votre document HTML */
+
+#hero {
+    position: relative;
+    height: 100vh; /* 100% de la hauteur de la fenêtre visible */
+    background: url('images/home.jpg') center/cover no-repeat; /* Ajoutez votre propre image d'en-tête */
+    color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content {
+    background-color: rgba(250, 250, 250, 0.66); /* Fond semi-transparent noir pour améliorer la lisibilité du texte */
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #000000;
+}
+
+.hero-about{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #000000;
+    background-image: url("images/home1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hero-about h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #000000;
+}
+
+.hero-about p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #000000;
+}
+
+.btn{
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    box-sizing: border-box;
+    margin: 5%;
+    text-align: center;
+    width: 50%; /* Ajustez la largeur selon vos besoins */
+    margin: auto;
+    display: block;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #646464;
+}
+
+/* Ajoutez ceci à votre fichier style.css ou entre les balises <style>...</style> dans l'en-tête de votre document HTML */

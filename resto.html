@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet Gestion Restaurants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .box {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .class-section {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .code {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .method {
+            font-style: italic;
+            color: #28A745;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #6C757D;
+        }
+        img {
+            width: 70%;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<section id="5">
+    <div class="box">
+        <h1>Projet Gestion Restaurants</h1>
+
+        <h2>Fonctions de Récupération de Données (bd.inc.php)</h2>
+        <ul>
+            <li><code>getUtilisateurs()</code>: Récupère tous les utilisateurs de la base de données.</li>
+            <li><code>getUtilisateurByMailU($mailU)</code>: Récupère un utilisateur par son adresse e-mail.</li>
+            <li><code>getTypesCuisine()</code>: Récupère tous les types de cuisine.</li>
+            <li><code>getTypesCuisinePreferesByMailU($mailU)</code>: Récupère les types de cuisine préférés d'un utilisateur.</li>
+            <li><code>getRestoByIdR($idR)</code>: Récupère un restaurant par son identifiant.</li>
+        </ul>
+
+        <h2>Fonctions de Gestion des Restaurants (bd.pdo.php)</h2>
+        <ul>
+            <li><code>getLesRestos()</code>: Récupère tous les restaurants.</li>
+            <li><code>getUnRestoByIdR($idR)</code>: Récupère un restaurant par son identifiant.</li>
+            <li><code>getLesRestosByTypeCuisine($idTC)</code>: Récupère les restaurants par type de cuisine.</li>
+            <li><code>getLesRestosByVille($villeR)</code>: Récupère les restaurants par ville.</li>
+            <li><code>getLesRestosByNom($nomR)</code>: Récupère les restaurants par nom.</li>
+        </ul>
+
+        <h2>Fonctions de Gestion des Photos (photos.php)</h2>
+        <ul>
+            <li><code>getLesPhotosByIdR($idR)</code>: Récupère les photos d'un restaurant par son identifiant.</li>
+        </ul>
+
+        <h2>Fonctions de Gestion des Critiques (critiquer.php)</h2>
+        <ul>
+            <li><code>getCritiquerByIdR($idR)</code>: Récupère les critiques d'un restaurant par son identifiant.</li>
+            <li><code>getNoteMoyenneByIdR($idR)</code>: Calcule la note moyenne d'un restaurant.</li>
+        </ul>
+
+        <h2>Fonctions de Gestion des Utilisateurs (bd.utilisateur.inc.php)</h2>
+        <ul>
+            <li><code>login($mailU, $mdpU)</code>: Gère la connexion utilisateur.</li>
+            <li><code>logout()</code>: Gère la déconnexion utilisateur.</li>
+            <li><code>getMailULoggedOn()</code>: Récupère l'e-mail de l'utilisateur connecté.</li>
+            <li><code>isLoggedOn()</code>: Vérifie si un utilisateur est connecté.</li>
+        </ul>
+
+        <h2>Base de Données (bd.pdo.php)</h2>
+        <ul>
+            <li><code>getLesRestosByTypeCuisine($idTC)</code>: Récupère les restaurants par type de cuisine.</li>
+        </ul>
+        cette photo est l'affichage des restos<br>
+
+        <img src="images/r3st0.png"><br>
+        les details d'un resto<br>
+        <img src="images/r3st1.png"><br>
+        recherche par nom<br>
+        <img src="images/r3st2.png"><br>
+        recherche par ville et adresse et code podtale<br>
+        <img src="images/r3st3.png">
+    </div>
+</section>
+
+
+</body>
+</html>

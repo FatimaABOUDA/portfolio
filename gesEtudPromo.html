@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système de Gestion des Étudiants et des Promotions</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .class-section {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .code {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .method {
+            font-style: italic;
+            color: #28A745;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #6C757D;
+        }
+        img {
+            width: 70%;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Système de Gestion des Étudiants et des Promotions</h1>
+
+    <section class="class-section">
+        <h2>Classe Etudiant</h2>
+        <p>Attributs :</p>
+        <ul>
+            <li><span class="code">$Code</span></li>
+            <li><span class="code">$Nom</span></li>
+            <li><span class="code">$Prenom</span></li>
+            <li><span class="code">$laPromo</span> (de type <span class="code">Promotion</span>)</li>
+        </ul>
+
+        <p>Méthodes :</p>
+        <ul>
+            <li><span class="method">__construct()</span> : Constructeur de la classe.</li>
+            <li>Accesseurs : <span class="method">getCode()</span>, <span class="method">getNom()</span>, <span class="method">getPrenom()</span>, <span class="method">getPromo()</span>.</li>
+            <li>Mutateurs : <span class="method">setCode()</span>, <span class="method">setNom()</span>, <span class="method">setPrenom()</span>, <span class="method">setPromo()</span>.</li>
+            <li><span class="method">addEtudiant()</span> : Ajoute un étudiant à la base de données.</li>
+            <li><span class="method">getEtudiants()</span> : Récupère tous les étudiants depuis la base de données.</li>
+            <li><span class="method">getUnEtudiant(string $code)</span> : Récupère un étudiant spécifique par code.</li>
+        </ul>
+    </section>
+
+    <section class="class-section">
+        <h2>Classe Promotion</h2>
+        <p>Attributs :</p>
+        <ul>
+            <li><span class="code">$Code</span></li>
+            <li><span class="code">$Nom</span></li>
+            <li><span class="code">$etudiantCollection</span> (un tableau d'étudiants)</li>
+        </ul>
+
+        <p>Méthodes :</p>
+        <ul>
+            <li><span class="method">__construct()</span> : Constructeur de la classe.</li>
+            <li>Accesseurs : <span class="method">getCode()</span>, <span class="method">getNom()</span>.</li>
+            <li>Mutateurs : <span class="method">setCode()</span>, <span class="method">setNom()</span>.</li>
+            <li><span class="method">getUnePromo(string $code)</span> : Récupère une promotion avec ses étudiants depuis la base de données.</li>
+            <li><span class="method">getEtudiantCollection()</span> : Récupère tous les étudiants depuis la base de données.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Connexion à la Base de Données</h2>
+        <p>Un fichier <span class="code">config/dataBase.php</span> est inclus pour établir la connexion à la base de données MySQL.</p>
+    </section>
+
+    <section>
+        <h2>Fichier HTML</h2>
+        <p>Un fichier HTML simple avec des commentaires indiquant comment utiliser les classes et la configuration de la base de données. Les exemples incluent la création d'objets, leur ajout à la base de données et la récupération d'informations.</p>
+    </section>
+
+    voir le diagramme de classe du projet
+    <img src="images/diagprojet1.png">
+<br>
+    affichage qui permet de voir les promotions des etduiants en utilisant les commande suivantes :
+    <code>
+        $promo = new Promotion();
+        $promo = $promo->getUnePromo('B2SIO');
+        var_dump($promo);
+    </code>
+    <img src="images/promo.png">
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ORM - Gestion des Familles et Produits</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 5px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        img {
+            width: 100%;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div class="container">
+        <h1>ORM - Gestion des Familles et Produits</h1>
+
+        <h2>Classe : Famille</h2>
+        <ul>
+            <li><strong>Propriétés :</strong>
+                <ul>
+                    <li><code>codeFamille</code></li>
+                    <li><code>nomFamille</code></li>
+                    <li><code>AlleeStockage</code></li>
+                    <li><code>produits</code></li>
+                    <li><code>laFamille</code> (statique)</li>
+                </ul>
+            </li>
+            <li><strong>Constructeur :</strong>
+                <ul>
+                    <li>Initialise les propriétés de la classe et crée une liste vide pour les produits.</li>
+                </ul>
+            </li>
+            <li><strong>Méthode <code>CreateFamille</code> :</strong>
+                <ul>
+                    <li>Connecte à la base de données MySQL.</li>
+                    <li>Exécute une requête SQL d'insertion pour ajouter une nouvelle famille avec des paramètres spécifiés.</li>
+                </ul>
+            </li>
+            <li><strong>Méthodes <code>findOneFamille</code> et <code>findAllFamille</code> :</strong>
+                <ul>
+                    <li><code>findOneFamille</code> : Recherche une famille par code dans la base de données et renvoie une instance de Famille.</li>
+                    <li><code>findAllFamille</code> : Récupère toutes les familles de la base de données et renvoie une liste d'instances de Famille.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Classe : Produit</h2>
+        <ul>
+            <li><strong>Propriétés :</strong>
+                <ul>
+                    <li><code>codeProduit</code></li>
+                    <li><code>nomProduit</code></li>
+                    <li><code>laFamille</code></li>
+                </ul>
+            </li>
+            <li><strong>Constructeur :</strong>
+                <ul>
+                    <li>Initialise les propriétés de la classe.</li>
+                </ul>
+            </li>
+            <li><strong>Méthode <code>findAllProduit</code> :</strong>
+                <ul>
+                    <li>Recherche tous les produits de la base de données et renvoie une liste d'instances de Produit.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Classe : Form1 (Formulaire principal)</h2>
+        <ul>
+            <!-- Ajoutez les détails de la classe Form1 ici si nécessaire -->
+        </ul>
+
+        <img src="images/ORM.png" alt="Diagramme ORM">
+    </div>
+</section>
+
+</body>
+</html>

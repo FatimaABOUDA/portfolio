@@ -1,65 +1,80 @@
 .timeline-container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 0 20px;
-    background: rgba(255, 255, 255, 0.61);
+    width: 100%;
+    height: auto;
+    background: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .timeline {
     position: relative;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    max-width: 800px;
+
 }
 
 .timeline__item {
+    padding: 20px 40px;
     position: relative;
-    margin-bottom: 20px;
+    border-bottom: 1px solid #000000;
+
 }
 
 .timeline__item--year {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+    padding: 0;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+
 }
 
 .timeline__title {
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: rgba(0, 0, 0, 0.63);
+    background-image: url("images/experience.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
 }
 
 .timeline__blurb {
-    color: rgba(209, 142, 214, 0.5);
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #fafafa;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.timeline__blurb:hover {
     text-decoration: none;
-    font-weight: bold;
+    color: rgba(250, 250, 250, 0.53);
+
 }
 
-/* Styling the timeline line */
-.timeline:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 2px;
-    background-color: #000000;
-    margin-left: -1px;
+.timeline__item timeline__item--year {
+    padding: 0;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    color: #000000;
 }
 
-/* Styling the timeline circles */
-.timeline__item:before {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: #000000;
-    border-radius: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-}
-
-/* Clearfix for better alignment */
-.timeline:after {
-    content: "";
-    display: table;
-    clear: both;
-}

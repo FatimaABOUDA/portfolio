@@ -8,51 +8,21 @@ body {
     padding: 0;
     box-sizing: border-box;
     opacity: 1;
-    background-image: url("images/home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.37);
+    background-color: rgb(250, 250, 250);
 }
 
 .section-center {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: block;
-    width: 100%;
-    max-width: 1000px;
-    padding: 0;
-    margin: 0;
-    z-index: 6;
-
-    text-align: center;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.47);
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    opacity: 0.9;
-    //centrer
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    //centre
-    background-color: #000000;
-    opacity: 0.9;
-    border-radius: 25px;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-
+width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    color: #000;
 }
 
 h1 {
@@ -100,7 +70,7 @@ h1 {
     top: 0;
     left: 0;
     border-top: 2px solid #000000;
-    border-bottom: 2px solid #ececee;
+    border-bottom: 2px solid #000000;
     transition: border-width 100ms 1500ms ease,
     top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
     height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
@@ -253,7 +223,7 @@ h1 {
 
 .nav ul li a:hover {
     text-decoration: none;
-    color: #d18ed6;
+    color: rgba(250, 250, 250, 0.53);
 }
 
 .nav ul li a:after {
@@ -265,7 +235,7 @@ h1 {
     margin-top: -1vh;
     width: 0;
     left: 0;
-    background-color: #9c89a1;
+    background-color: rgba(0, 0, 0, 0.65);
     opacity: 0.8;
     transition: width 250ms linear;
 }
@@ -338,8 +308,8 @@ h1 {
         line-height: 1;
         color: transparent; /* Set text color to transparent */
         text-align: center;
-        -webkit-text-stroke: 2px #fcfcfc;
-        text-stroke: 2px #fcfcfc;
+        -webkit-text-stroke: 2px #000000;
+        text-stroke: 2px #000000;
         -webkit-text-fill-color: transparent;
         text-fill-color: transparent;
         color: transparent;
@@ -356,14 +326,14 @@ h1 {
         font-weight: 800;
         display: inline-block;
         position: relative;
-        color: rgba(236, 236, 238, 0.8); /* Set text color to transparent white */
+        color: rgb(0, 0, 0); /* Set text color to transparent white */
         transition: all 250ms linear;
     }
 
     /* Add this rule for navigation links on hover */
     .nav ul li a:hover {
         text-decoration: none;
-        color: #ff96c5; /* Pink color */
+        color: #000000; /* Pink color */
         opacity: 1; /* Set opacity to 1 on hover */
     }
 

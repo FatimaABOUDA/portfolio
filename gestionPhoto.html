@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet PHOTOS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        .box {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        ul {
+            margin-bottom: 20px;
+        }
+li {
+            margin-bottom: 5px;
+        }
+
+        img {
+            width: 100%;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<section id="5">
+    <div class="box">
+        <h1>Projet PHOTOS</h1>
+
+        <h2>But du Projet</h2>
+        <p>
+            Ce projet est une application web de gestion de photos développée en PHP. Elle offre des fonctionnalités CRUD (Create, Read, Update, Delete) pour interagir avec une base de données de photos.
+        </p>
+
+        <h2>Pages et Fonctionnalités</h2>
+
+        <!-- 1. Page d'accueil (index.php) -->
+        <h3>1. Page d'accueil (index.php)</h3>
+        <ul>
+            <li>Contenu : Message de bienvenue et informations sur le maquillage.</li>
+            <li>Inclusions :
+                <ul>
+                    <li>Feuille de style : style.css.</li>
+                    <li>En-tête : bloc_entete.php.</li>
+                    <li>Menu : bloc_menu.php.</li>
+                    <li>Pied de page : bloc_pied.php.</li>
+                    <li>Contenu supplémentaire spécifique à la page d'accueil (accueil.php).</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- 2. Contenu de la Page d'Accueil (accueil.php) -->
+        <h3>2. Contenu de la Page d'Accueil (accueil.php)</h3>
+        <p>Contient probablement un contenu spécifique ou des fonctionnalités pour la page d'accueil.</p>
+
+        <!-- 3. Liste des Photos (partie1.1liste_photos.php) -->
+        <h3>3. Liste des Photos (partie1.1liste_photos.php)</h3>
+        <ul>
+            <li>Fonctionnalité : Affiche une liste de photos en fonction du type sélectionné.</li>
+            <li>Fonctionnalités :
+                <ul>
+                    <li>Menu déroulant pour choisir un type de photo.</li>
+                    <li>Formulaire pour soumettre le type sélectionné.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- 4. Informations Détaillées sur une Photo (partie1.2info_photos.php) -->
+        <h3>4. Informations Détaillées sur une Photo (partie1.2info_photos.php)</h3>
+        <ul>
+            <li>Fonctionnalité : Affiche des informations détaillées sur une photo sélectionnée.</li>
+            <li>Fonctionnalités :
+                <ul>
+                    <li>Récupère et affiche des détails depuis la base de données en fonction de la photo sélectionnée.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- 5. Liste des Articles (partie2.info_article.php) -->
+        <h3>5. Liste des Articles (partie2.info_article.php)</h3>
+        <ul>
+            <li>Fonctionnalité : Affiche une liste d'articles.</li>
+            <li>Fonctionnalités :
+                <ul>
+                    <li>Détails sur chaque article, y compris les photos associées.</li>
+                    <li>Formulaire pour ajouter de nouvelles photos aux articles.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- 6. Informations sur les Photographes (partie3.photographe.php) -->
+        <h3>6. Informations sur les Photographes (partie3.photographe.php)</h3>
+        <ul>
+            <li>Fonctionnalité : Liste tous les photographes et permet des modifications.</li>
+            <li>Fonctionnalités :
+                <ul>
+                    <li>Option pour modifier les informations d'un photographe.</li>
+                    <li>Formulaire pour mettre à jour les détails du photographe.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Points Généraux</h2>
+        <ul>
+            <li>Style : Style cohérent à travers les sections avec style.css.</li>
+            <li>Interaction avec la Base de Données PHP : PHP est utilisé pour se connecter à une base de données, récupérer des données et générer du contenu dynamiquement.</li>
+            <li>Structure Modulaire : Les sections sont divisées en différents fichiers pour la maintenabilité.</li>
+        </ul>
+
+        <h2>Points Additionnels</h2>
+        <ul>
+            <li>Assurez-vous d'une gestion appropriée des erreurs, de la validation et des mesures de sécurité, en particulier lors de l'interaction avec une base de données.</li>
+            <li>Considérez l'organisation supplémentaire du code PHP pour la clarté et la maintenabilité.</li>
+            <li>Considérez l'utilisation de fonctions PHP pour éviter la duplication de code.</li>
+            <li>Considérez l'utilisation de classes PHP pour encapsuler les données et les opérations liées aux photos, aux articles et aux photographes.</li>
+        </ul>
+
+        <!-- Ajout d'une section pour l'image -->
+        <h2>Exemple de Mise en Page</h2>
+        <img src="images/BLOC2_A2_PHOTO.png" alt="Exemple de Mise en Page">
+    </div>
+</section>
+
+</body>
+</html>

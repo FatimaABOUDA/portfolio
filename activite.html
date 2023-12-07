@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Système d'Inscription à une Compétition</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .class-section {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .code {
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        .method {
+            font-style: italic;
+            color: #28A745;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #6C757D;
+        }
+
+        img {
+            width: 70%;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Système d'Inscription à une Compétition</h1>
+
+<section class="class-section">
+        <h2>Classe Participant</h2>
+        <p>Attributs :</p>
+        <ul>
+            <li><span class="code">$id</span></li>
+            <li><span class="code">$nom</span></li>
+            <li><span class="code">$prenom</span></li>
+            <li><span class="code">$email</span></li>
+            <li><span class="code">$etablissement</span></li>
+            <li><span class="code">$ville</span></li>
+            <li><span class="code">$departement</span></li>
+            <li><span class="code">$trancheAge</span></li>
+            <li><span class="code">$loisirs</span></li>
+            <li><span class="code">$description</span></li>
+        </ul>
+
+        <p>Méthodes :</p>
+
+
+
+<div class="projet">
+    <h2>Fonctionnalités Principales</h2>
+    <ol>
+        <li>
+            <h3>Formulaire d'Inscription</h3>
+            <ul>
+                <li>Un formulaire interactif permet aux utilisateurs de s'inscrire à la compétition.</li>
+                <li>Collecte des informations telles que le nom, le prénom, l'e-mail, l'établissement, la ville, le département, la tranche d'âge, les loisirs préférés, et une description de projet web.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Connexion à la Base de Données</h3>
+            <ul>
+                <li>Établissement d'une connexion sécurisée à une base de données MySQL grâce à la fonction <code>connexionPDO()</code>.</li>
+                <li>Les informations de connexion sont encapsulées dans cette fonction, améliorant la sécurité.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Traitement Sécurisé des Données</h3>
+            <ul>
+                <li>Utilisation de requêtes SQL préparées pour insérer les données du formulaire dans la table "participant".</li>
+                <li>Prévention des attaques par injection SQL grâce à la liaison de valeurs de formulaire aux paramètres de requête.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Listes Déroulantes Dynamiques</h3>
+            <ul>
+                <li>Génération dynamique de la liste des départements à partir des données stockées dans la base de données.</li>
+                <li>Utilisation de cases à cocher pour permettre aux participants de sélectionner leurs loisirs préférés.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Feedback Utilisateur</h3>
+            <ul>
+                <li>Après soumission du formulaire, un message de confirmation est affiché, assurant une expérience utilisateur claire.</li>
+            </ul>
+        </li>
+    </ol>
+</div>
+    </div>
+    <div class="right">
+        <img src="images/projet1.png" alt="" class="imgperso">
+<div class="projet">
+    <h2>Technologies Utilisées</h2>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+    </ul>
+</div>
+
+<div class="projet">
+    <h2>Liens</h2>
+    <ul>
+        <li><a href="https://github.com/FatimaABOUDA/ACTIVITE1">Voir le code source sur GitHub</a></li>
+
+    </ul>
+</div>
+    </div>
+    </div>
+</section>
+
+</body>

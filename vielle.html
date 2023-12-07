@@ -4,8 +4,72 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style-menu.css">
+    <link rel="stylesheet" href="style-veille.css">
+
+    <style>
+        .hero-veille {
+            background-image: url('images/vielle.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            opacity: 0.9;
+
+        }
+
+        .veille {
+            padding: 20px;
+        }
+
+        .tool-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .tool-box {
+            width: 45%;
+            margin-bottom: 20px;
+        }
+
+        .tool {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tool img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .tool a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .tool a:hover {
+            color: #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .tool-box {
+                width: 100%;
+            }
+        }
+        section{
+            margin-top: 100px;
+
+        }
+
+    </style>
 
     <title>Portfolio</title>
 </head>
@@ -23,15 +87,21 @@
             <li><a href="about.html">A propos de moi</a></li>
             <li><a href="experience.html">Expérience</a></li>
 
-            <li><a href="skills.html">Compétences</a></li>
             <li><a href="projets.html">Projets</a></li>
             <li><a href="vielle.html">Veille</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <section >
+    <section class="hero-veille">
     <h1>La Veille Technologique</h1>
+    </section>
+    <section class="veille">
+    <h2>Qu'est-ce que la Veille Technologique ?</h2>
+    <p>La veille technologique est le processus de surveillance des tendances technologiques pour identifier les
+        opportunités et les menaces potentielles. Les entreprises utilisent la veille technologique pour obtenir un
+        avantage concurrentiel, en s'assurant qu'elles sont au courant des dernières avancées technologiques et en
+        utilisant ces connaissances pour améliorer leurs produits et services.</p>
 
     <h2>Introduction :</h2>
     <p>La veille technologique, généralement associée aux entreprises, est tout aussi importante pour les étudiants en
