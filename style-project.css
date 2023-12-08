@@ -16,12 +16,21 @@
     flex-direction: column;
     justify-content: center;
 }
+.projet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+
+}
 .project-box {
     border: 1px solid #ddd; /* Bordure de la boîte */
     border-radius: 8px; /* Coins arrondis */
     overflow: hidden;
     margin: 20px 0;
-
+    width: 100%;
 
 }
 
@@ -48,7 +57,7 @@
 .project-link {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #3498db; /* Couleur de fond du bouton */
+    background-color: #000000; /* Couleur de fond du bouton */
     color: #fff; /* Couleur du texte du bouton */
     text-decoration: none;
     border-radius: 5px;
@@ -57,7 +66,8 @@
 }
 
 .project-link:hover {
-    background-color: #2980b9; /* Couleur de fond du bouton au survol */
+    background-color: #646464; /* Couleur de fond du bouton au survol */
+
 }
 
 /* Ajoutez des ajustements supplémentaires selon vos préférences */
@@ -97,6 +107,7 @@
     margin: 20px 0;
     width: 100%;
     height: 100%;
+
 }
 
 .projet .project-box img{
@@ -117,4 +128,31 @@
 .projet .project-description{
     font-size: 1.2em;
     color: #555; /* Couleur du texte de la description */
+}
+
+.projet .project-link{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #000000; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.projet .project-link:hover{
+    background-color: #646464; /* Couleur de fond du bouton au survol */
+
+}
+
+/* Ajoutez des ajustements supplémentaires selon vos préférences */
+
+img {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }

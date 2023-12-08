@@ -1,80 +1,161 @@
 .timeline-container {
+    position: relative;
+    margin: 0 auto;
     width: 100%;
-    height: auto;
-    background: #000000;
+    max-width: 1200px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #212529;
+    text-align: center;
     padding: 20px;
-    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
 }
 
 .timeline {
-    position: relative;
-    margin: 0 auto;
-    padding: 0;
     list-style: none;
-    max-width: 800px;
-
+    padding: 20px 0;
+    position: relative;
 }
 
 .timeline__item {
-    padding: 20px 40px;
-    position: relative;
-    border-bottom: 1px solid #000000;
-
-}
-
-.timeline__item--year {
-    padding: 0;
-    position: relative;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
-
-}
-
-.timeline__title {
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    color: rgba(0, 0, 0, 0.63);
-    background-image: url("images/experience.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-
-
-}
-
-.timeline__blurb {
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 1.2;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    color: #fafafa;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.timeline__blurb:hover {
-    text-decoration: none;
-    color: rgba(250, 250, 250, 0.53);
-
-}
-
-.timeline__item timeline__item--year {
-    padding: 0;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
+    padding: 20px 0;
+
+}
+
+.timeline__item:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: 150px;
+    width: 2px;
+    height: 100%;
+    background: #000000;
+    /** je veux mettre la bar verticale à gauche */
+}
+
+.timeline__item:last-child:before {
+    display: none;
+}
+
+.timeline__item .timeline__content {
+    width: 45%;
+    padding: 0 20px;
+    position: relative;
+}
+
+.timeline__item .timeline__content:before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: -18px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #eeeeee;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 2px #eeeeee;
+}
+
+.timeline__item .timeline__content .timeline__year {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 4px 10px;
+    background: #ffffff;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 2px #eeeeee;
+}
+
+.timeline__item .timeline__content .timeline__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
     color: #000000;
 }
 
+.timeline__item .timeline__content .timeline__text {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 10px;
+    color: #000000;
+}
+
+.timeline__item .timeline__content .timeline__text:last-child {
+    margin: 0;
+}
+
+.timeline__item .timeline__content .timeline__text a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.timeline__item .timeline__content .timeline__text a:hover {
+    color: #0056b3;
+}
+
+.timeline__item .timeline__content .timeline__text a:before {
+    content: '#';
+}
+
+.timeline__item .timeline__content .timeline__text small {
+    font-size: 12px;
+    font-weight: 300;
+    color: #555;
+}
+
+.timeline__item .timeline__content .timeline__text em {
+    font-style: normal;
+    font-weight: bold;
+    color: #555;
+}
+
+.timeline__item .timeline__content .timeline__text strong {
+    font-weight: bold;
+    color: #000000;
+}
+
+.timeline__item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.timeline__item:nth-child(even) {
+    flex-direction: row;
+}
+
+.timeline__item:nth-child(odd) .timeline__content {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.timeline__item:nth-child(even) .timeline__content {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.timeline__item:nth-child(odd) .timeline__content:before {
+    left: auto;
+    right: -18px;
+}
+
+.timeline__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #000000;
+}

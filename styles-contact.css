@@ -1,125 +1,145 @@
-
+/* Style the contact section container */
 .contact-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+
+}
+
+/* Style the contact container with flexbox */
+.contact-container {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 50px 0;
-    background-color: rgba(242, 242, 242, 0.2);
-
-
-    .contact-container {
-        display: flex;
-        width: 80%;
-        margin: 0 auto;
-        background-color: rgba(0, 0, 0, 0.78);
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-    }
-
-    .contact-column {
-        flex: 1;
-        margin: 0 1rem;
-        padding: 1rem;
-
-    }
-
-    .contact-info h2,
-    .contact-form h2 {
-        font-size: 1.5rem;
-        font-weight: 300;
-        line-height: 1.2;
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-        color: #d18ed6;
-
-    }
-
-    .contact-info ul,
-    .contact-form form {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        color: #d18ed6;
-
-    }
-
-    .contact-info li {
-        margin-bottom: 10px;
-        color: rgba(209, 142, 214, 0.91);
-
-    }
-
-    .contact-info a,
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #000000;
-        border-radius: 3px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1rem;
-        font-weight: 300;
-        line-height: 1.2;
-        color: #fafafa;
-        transition: border-color 0.2s ease;
-
-
-    }
-
-    .contact-info .social-icons a img {
-        width: 30px; /* Ajustez la taille des icônes selon vos besoins */
-        margin-right: 10px;
-        border-radius: 50%;
-        border: 1px solid #ccc;
-        padding: 5px;
-        transition: transform 0.5s ease;
-
-
-    }
-
-    .contact-form input[type="submit"] {
-        background-color: #d18ed6;
-        color: white;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-        border: none;
-
-
-    }
-
-    .social-section {
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-
-    }
-
-    .social-links {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-
-    }
-
-    .social-links li {
-        display: inline-block;
-        margin: 0 10px;
-
-    }
-
-    .social-links a {
-        color: #999;
-        transition: color 0.2s ease;
-
-
-    }
-
-    .social-links a:hover {
-        color: #555;
-
-
-    }
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+/* Style each contact column */
+.contact-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 10px;
+
+}
+
+/* Style the contact info column */
+.contact-info {
+    text-align: center;
+
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+
+}
+
+.contact-info strong {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #fafafa;
+
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+
+}
+
+/* Style the social icons */
+.social-icons img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+
+}
+
+/* Style the contact form column */
+.contact-form {
+    text-align: center;
+
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+
+/* Style the form inputs and textarea */
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #646464;
+
+}
+
+
