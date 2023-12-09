@@ -320,20 +320,21 @@ h1 {
 
     .nav ul li a {
         font-family: 'Montserrat', sans-serif;
-        font-size: 9vh;
+        font-size: 5vh;
         text-transform: uppercase;
         line-height: 1.2;
         font-weight: 800;
         display: inline-block;
         position: relative;
-        color: rgb(0, 0, 0); /* Set text color to transparent white */
+        color: rgb(250, 250, 250); /* Set text color to transparent white */
         transition: all 250ms linear;
+
     }
 
     /* Add this rule for navigation links on hover */
     .nav ul li a:hover {
         text-decoration: none;
-        color: #000000; /* Pink color */
+        color: #646464; /* Pink color */
         opacity: 1; /* Set opacity to 1 on hover */
     }
 

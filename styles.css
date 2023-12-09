@@ -361,3 +361,112 @@ section {
 }
 
 /* Ajoutez ceci à votre fichier style.css ou entre les balises <style>...</style> dans l'en-tête de votre document HTML */
+
+@media (min-width: 768px) {
+    .hero-content h2 {
+        font-size: 6rem;
+    }
+
+    .hero-content p {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+
+    .hero-about h2 {
+        font-size: 6rem;
+    }
+
+    .hero-about p {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+
+    .box-item {
+        width: 50%;
+    }
+
+    .box-item:nth-child(2n) {
+        margin-left: 0;
+    }
+
+    .box-item:nth-child(2n+1) {
+        margin-right: 0;
+    }
+
+    .box-item:nth-child(3n) {
+        margin-left: 0;
+    }
+
+    .box-item:nth-child(3n+1) {
+        margin-right: 0;
+    }
+
+    .box-item:nth-child(4n) {
+        margin-left: 0;
+    }
+
+    .box-item:nth-child(4n+1) {
+        margin-right: 0;
+    }
+
+    .box-item:nth-child(5n) {
+        margin-left: 0;
+    }
+
+    .box-item:nth-child(5n+1) {
+        margin-right: 0;
+    }
+
+    .projet {
+        width: 50%;
+    }
+
+    .projet:nth-child(2n) {
+        margin-left: 0;
+    }
+
+    .projet:nth-child(2n+1) {
+        margin-right: 0;
+    }
+
+    .projet:nth-child(3n) {
+        margin-left: 0;
+    }
+
+    .section-about-5\/5{
+display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+        max-width: 1000px;
+        border: 2px solid #646464;
+        border-radius: 25px;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .left{
+        flex: 1;
+        padding: 5px;
+        text-align: left;
+        margin: 5% 5% 5% 5%;
+
+    }
+    .left img {
+
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        margin: 5% 5% 5% 5%;
+
+        }
+
+}
