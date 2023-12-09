@@ -38,7 +38,6 @@
     margin-left: 150px;
     width: 2px;
     height: 100%;
-    background: #000000;
     /** je veux mettre la bar verticale à gauche */
 }
 
@@ -79,6 +78,7 @@
     left: -50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 0 2px #eeeeee;
+
 }
 
 .timeline__item .timeline__content .timeline__title {
@@ -86,6 +86,7 @@
     font-weight: bold;
     margin: 0 0 10px;
     color: #000000;
+
 }
 
 .timeline__item .timeline__content .timeline__text {
@@ -93,45 +94,17 @@
     font-weight: 300;
     margin: 0 0 10px;
     color: #000000;
+
 }
 
 .timeline__item .timeline__content .timeline__text:last-child {
     margin: 0;
 }
 
-.timeline__item .timeline__content .timeline__text a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.timeline__item .timeline__content .timeline__text a:hover {
-    color: #0056b3;
-}
-
-.timeline__item .timeline__content .timeline__text a:before {
-    content: '#';
-}
-
-.timeline__item .timeline__content .timeline__text small {
-    font-size: 12px;
-    font-weight: 300;
-    color: #555;
-}
-
-.timeline__item .timeline__content .timeline__text em {
-    font-style: normal;
-    font-weight: bold;
-    color: #555;
-}
-
-.timeline__item .timeline__content .timeline__text strong {
-    font-weight: bold;
-    color: #000000;
-}
 
 .timeline__item:nth-child(odd) {
     flex-direction: row-reverse;
+
 }
 
 .timeline__item:nth-child(even) {
@@ -151,6 +124,7 @@
 .timeline__item:nth-child(odd) .timeline__content:before {
     left: auto;
     right: -18px;
+
 }
 
 .timeline__title {
@@ -158,4 +132,35 @@
     font-weight: bold;
     margin: 0 0 10px;
     color: #000000;
+
+}
+
+.timeline__blurb {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 10px;
+    color: #fafafa;
+
+}
+
+.timeline__blurb:last-child {
+    margin: 0;
+
+}
+
+.timeline__blurb a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.timeline__blurb a:hover {
+    text-decoration: underline;
+    background-color: #646464;
+
+}
+
+.timeline__item:nth-child(odd) .timeline__content .timeline__year {
+    left: auto;
+    right: -50%;
+    transform: translate(50%, -50%);
 }
